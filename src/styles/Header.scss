@@ -1,0 +1,18 @@
+@import "vars";
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-active {
+  background-color: var(--very-dark-blue);
+  opacity: 1;
+}
+
+.logo {
+  z-index: 2;
+}
