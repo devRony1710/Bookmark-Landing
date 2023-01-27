@@ -24,3 +24,16 @@
   background-color: var(--soft-blue);
   border-bottom-left-radius: 20%;
 }
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    flex-direction: row-reverse;
+    padding: 20px 80px;
+  }
+
+  .main-container::after {
+    top: 35%;
+    height: 300px;
+    width: 500px;
+  }
+}

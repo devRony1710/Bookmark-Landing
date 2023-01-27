@@ -13,7 +13,10 @@ const Main = () => {
   return (
     <div className="main-container">
       <img className="hero-image" src={MainImage} alt="hero illustration" />
-      <MainInfo />
+
+      <div className="main-info-container">
+        <MainInfo />
+      </div>
     </div>
   );
 };

@@ -14,7 +14,6 @@
 .main-title {
   display: block;
   font-size: 28px;
-  text-align: center;
 }
 
 .main-description {
@@ -52,4 +51,14 @@
   background-color: var(--soft-blue);
   color: white;
   opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-info-container {
+    align-items: flex-start;
+  }
+
+  .main-description {
+    text-align: start;
+  }
 }

@@ -1,26 +1,10 @@
 import React from "react";
 
+// constants
+import { links } from "../common/constants/Links";
+
 //styles
 import "../styles/MobileMenu.scss";
-
-const links = [
-  {
-    linkName: "Features",
-    path: "/features",
-  },
-  {
-    linkName: "Pricing",
-    path: "/features",
-  },
-  {
-    linkName: "Contact",
-    path: "/features",
-  },
-  {
-    linkName: "Login",
-    path: "/features",
-  },
-];
 
 const MenuItem = ({ path, linkName }) => {
   return <a href={path}>{linkName}</a>;
@@ -28,10 +12,10 @@ const MenuItem = ({ path, linkName }) => {
 
 const MobileMenu = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="mobile-menu-wrapper">
+      <ul className="mobile-menu-list">
         {links.map((item) => (
-          <li>
+          <li className="mobile-menu-item">
             <hr />
             <MenuItem path={item.path} linkName={item.linkName} />
           </li>

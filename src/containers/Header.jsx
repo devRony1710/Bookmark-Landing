@@ -8,6 +8,7 @@ import CloseIcon from "../assets/images/icon-close.svg";
 
 //components
 import MobileMenu from "../components/MobileMenu";
+import Navbar from "../components/Navbar";
 
 // styles
 import "../styles/Header.scss";
@@ -26,6 +27,10 @@ const Header = () => {
         className="logo"
         alt="Bookmark Landing"
       />
+
+      <div className="desktop-navbar">
+        <Navbar />
+      </div>
 
       <div className="mobile-menu-container">
         <div onClick={handleToggleMenu}>
