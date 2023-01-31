@@ -1,0 +1,29 @@
+@import "vars";
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+}
+
+.input-container > label {
+  font-size: 18px;
+  color: var(--very-dark-blue);
+}
+
+.input-container > input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px var(--soft-blue);
+  outline: none;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .input-container {
+    width: 80%;
+  }
+}

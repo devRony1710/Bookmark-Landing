@@ -13,6 +13,6 @@ export const links = [
   },
   {
     linkName: "Login",
-    path: "/features",
+    path: "/login",
   },
 ];
