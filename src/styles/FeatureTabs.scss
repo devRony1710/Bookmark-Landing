@@ -1,0 +1,27 @@
+@import "vars";
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.tabs-children-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .tabs-container {
+    flex-direction: row;
+    border-bottom: 1px solid var(--grayish-blue);
+    width: 70%;
+    margin: 30px auto 30px;
+  }
+}

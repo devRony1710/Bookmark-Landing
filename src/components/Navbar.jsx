@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     <nav className="navbar-container">
       <ul className="navbar-list">
-        {links.map((link) => (
-          <li className="navbar-item">
+        {links.map((link, index) => (
+          <li key={index} className="navbar-item">
             <a href={link.path}>{link.linkName}</a>
           </li>
         ))}

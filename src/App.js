@@ -1,5 +1,9 @@
+// components
+import Features from "./containers/Features";
 import Header from "./containers/Header";
 import Main from "./containers/Main";
+
+// styles
 import "./styles/App.scss";
 
 function App() {
@@ -7,6 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
+      <Features />
     </div>
   );
 }

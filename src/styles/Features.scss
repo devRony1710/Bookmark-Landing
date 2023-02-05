@@ -1,0 +1,32 @@
+@import "vars";
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
+  gap: 24px;
+}
+
+.feature-title {
+  color: var(--very-dark-blue);
+}
+
+.feature-description {
+  color: var(--grayish-blue);
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .features-container {
+    padding: 0;
+  }
+
+  .feature-description {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+}

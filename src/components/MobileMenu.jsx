@@ -14,8 +14,8 @@ const MobileMenu = () => {
   return (
     <nav className="mobile-menu-wrapper">
       <ul className="mobile-menu-list">
-        {links.map((item) => (
-          <li className="mobile-menu-item">
+        {links.map((item, index) => (
+          <li key={index} className="mobile-menu-item">
             <hr />
             <MenuItem path={item.path} linkName={item.linkName} />
           </li>

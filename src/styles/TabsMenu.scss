@@ -1,0 +1,41 @@
+@import "vars";
+
+.tab-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+  border-top: 1px solid var(--grayish-blue);
+}
+
+.tab-item-container:last-child {
+  border-bottom: 1px solid var(--grayish-blue);
+}
+
+.tab-item-container > button {
+  width: 60%;
+  height: 50%;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tab-item-container > button:focus {
+  border-bottom: 3px solid var(--soft-red);
+}
+
+@media screen and (min-width: 1024px) {
+  .tab-item-container {
+    border-top: none;
+    width: 60%;
+  }
+
+  .tab-item-container:last-child {
+    border-bottom: none;
+  }
+
+  .tab-item-container > button {
+    background: transparent;
+  }
+}
