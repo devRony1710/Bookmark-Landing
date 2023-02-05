@@ -14,6 +14,7 @@
 .main-title {
   display: block;
   font-size: 28px;
+  text-align: center;
 }
 
 .main-description {
@@ -34,6 +35,7 @@
   border-radius: 6px;
   border: none;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .main-buttons-container > button:first-child {

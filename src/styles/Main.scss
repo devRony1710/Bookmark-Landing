@@ -6,33 +6,40 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .hero-image {
   width: 100%;
-  z-index: 2;
+  height: 100%;
 }
 
-.main-container::after {
+.hero-image-container::after {
   content: "";
   position: absolute;
-  top: 23%;
+  top: 20%;
   right: 0;
   height: 200px;
   width: 300px;
   background-color: var(--soft-blue);
   border-bottom-left-radius: 20%;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1024px) {
   .main-container {
     flex-direction: row-reverse;
-    padding: 20px 80px;
+    padding: 30px;
   }
 
-  .main-container::after {
+  .hero-image-container::after {
     top: 35%;
+    right: -30px;
     height: 300px;
     width: 500px;
   }
