@@ -45,11 +45,20 @@
 }
 
 @media screen and (max-width: 420px) {
+  .login-container {
+    background-image: url("https://images.unsplash.com/photo-1585829365671-3ef0e1553a66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+
   .hero-login-image {
     display: none;
   }
 
   .form-container {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    justify-content: center;
+    border-radius: 20px;
   }
 }
