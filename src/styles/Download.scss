@@ -1,0 +1,36 @@
+@import "vars";
+
+.download-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.download-title {
+  color: var(--very-dark-blue);
+  text-align: center;
+}
+
+.download-description {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .download-section-container {
+    margin-top: 80px;
+  }
+  .download-description {
+    width: 35%;
+  }
+
+  .download-cards-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

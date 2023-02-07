@@ -1,0 +1,57 @@
+@import "vars";
+
+.card-container {
+  min-height: 400px;
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px var(--grayish-blue);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: var(--very-dark-blue);
+  text-align: center;
+}
+
+.card-version {
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.card-button {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--soft-blue);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    width: 300px;
+    max-height: 420px;
+  }
+
+  .medium {
+    margin-top: 5%;
+  }
+
+  .finalCard {
+    margin-top: 10%;
+  }
+}

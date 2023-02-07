@@ -1,4 +1,5 @@
 // components
+import Download from "./containers/Download";
 import Features from "./containers/Features";
 import Header from "./containers/Header";
 import Main from "./containers/Main";
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Main />
       <Features />
+      <Download />
     </div>
   );
 }
