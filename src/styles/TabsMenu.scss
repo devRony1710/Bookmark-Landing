@@ -14,11 +14,12 @@
 }
 
 .tab-item-container > button {
-  width: 60%;
+  width: 80%;
   height: 50%;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .tab-item-container > button:focus {

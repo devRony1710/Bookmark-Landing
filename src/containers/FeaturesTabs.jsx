@@ -2,9 +2,15 @@ import React, { useState } from "react";
 
 // components
 import TabsMenu from "../components/TabsMenu";
+import TabChildren from "../components/TabChildren";
 
 // constants
-import { TabsItems } from "../common/constants/TabsItems";
+import { TabsItems, TabsContent } from "../common/constants/TabsItems";
+
+// images
+import SimpleBookmarkingImage from "../assets/images/illustration-features-tab-1.svg";
+import SpeedySearchingImage from "../assets/images/illustration-features-tab-2.svg";
+import EasySharingImage from "../assets/images/illustration-features-tab-3.svg";
 
 // styles
 import "../styles/FeatureTabs.scss";
@@ -25,11 +31,23 @@ const FeaturesTabs = () => {
 
       <div className="tabs-children-container">
         {option === 1 ? (
-          <div>hola1</div>
+          <TabChildren
+            image={SimpleBookmarkingImage}
+            tabTitle={TabsContent.simpleBookmarking.tabTitle}
+            tabDescription={TabsContent.simpleBookmarking.tabDescription}
+          />
         ) : option === 2 ? (
-          <div>hola2</div>
+          <TabChildren
+            image={SpeedySearchingImage}
+            tabTitle={TabsContent.speedySearching.tabTitle}
+            tabDescription={TabsContent.speedySearching.tabDescription}
+          />
         ) : (
-          <div>Hola 3</div>
+          <TabChildren
+            image={EasySharingImage}
+            tabTitle={TabsContent.easySharing.tabTitle}
+            tabDescription={TabsContent.easySharing.tabDescription}
+          />
         )}
       </div>
     </>

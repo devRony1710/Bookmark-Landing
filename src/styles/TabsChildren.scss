@@ -1,0 +1,29 @@
+@import "vars";
+
+.children-container {
+  width: 100%;
+}
+
+.tab-image {
+  width: 100%;
+}
+
+.tab-children-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.tab-children-content > h3 {
+  color: var(--very-dark-blue);
+}
+
+.tab-children-content > p {
+  text-align: center;
+  color: var(--grayish-blue);
+}
