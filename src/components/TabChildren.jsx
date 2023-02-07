@@ -11,6 +11,8 @@ const TabChildren = ({ image, tabTitle, tabDescription }) => {
       <div className="tab-children-content">
         <h3>{tabTitle}</h3>
         <p>{tabDescription}</p>
+
+        <button>More Info</button>
       </div>
     </div>
   );
