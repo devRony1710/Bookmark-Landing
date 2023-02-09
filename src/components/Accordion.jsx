@@ -14,8 +14,8 @@ import "../styles/FAQ.scss";
 const SimpleAcordion = () => {
   return (
     <div className="faq-items-container">
-      {FAQItem.map((item) => (
-        <Accordion>
+      {FAQItem.map((item, index) => (
+        <Accordion key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon htmlColor="#5368df" />}
             aria-controls="panel1a-content"
