@@ -1,4 +1,5 @@
-// components
+// containers
+import Contact from "./containers/Contact";
 import Download from "./containers/Download";
 import FAQ from "./containers/FAQ";
 import Features from "./containers/Features";
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <Download />
       <FAQ />
+      <Contact />
     </div>
   );
 }
