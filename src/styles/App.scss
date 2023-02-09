@@ -3,3 +3,10 @@
 .App {
   width: 100vw;
 }
+
+@media screen and (min-width: 1024px) {
+  .App {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
