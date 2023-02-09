@@ -3,6 +3,7 @@ import Contact from "./containers/Contact";
 import Download from "./containers/Download";
 import FAQ from "./containers/FAQ";
 import Features from "./containers/Features";
+import Footer from "./containers/Footer";
 import Header from "./containers/Header";
 import Main from "./containers/Main";
 
@@ -18,6 +19,7 @@ function App() {
       <Download />
       <FAQ />
       <Contact />
+      <Footer />
     </div>
   );
 }
